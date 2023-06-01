@@ -18,7 +18,7 @@ body
     font-weight: 300
     font-size: 17px
     width: 100%
-
+   
 
 h2 
     font-weight: 700
@@ -55,6 +55,7 @@ button
 
 .titre-section 
     margin-bottom: 20px
+
 
 //
 
@@ -198,15 +199,22 @@ header
         font-size: 24px 
         color: white
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
-       
+        transition: all 0.5s
         
 
         &:hover 
+            font-size: 23px
             color: rgba(0, 0, 0, 0.0)
             background: linear-gradient(#9356DC, #FF79DA)
             background-clip: text
             text-shadow: none
-            transition: all 0.5s
+           
+.coeur-menu
+    p
+        color: $gris-clair
+
+        &:hover 
+            font-size: 24px    
             
         
 
@@ -324,25 +332,27 @@ h1
 
     .prix  
         flex-grow: 1    
-        text-align: right  
+        text-align: right
+        margin-right: -15px  
        
     .check
-        display: none
+        opacity: 0
         padding-right: 0px
-
+        transition: padding-right 0.3s
+    
+    
     &:hover
         .prix
-            padding-right: 3%
+            padding-right: 30px
 
         .check
-            display: inline
+            opacity: 100
             background-color: $vert-clair
-            padding: 20px
-            padding-right: 20px
-            padding-top: 26px
+            padding: 26px 20px 20px 20px
             margin: -10px 
             border-radius: 0px 15px 15px 0px
-            transition: all 2s
+           
+
 
 .fa-circle-check   
      color: white

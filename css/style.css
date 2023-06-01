@@ -177,14 +177,22 @@ header img {
   font-size: 24px;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  transition: all 0.5s;
 }
 .coeur p:hover {
+  font-size: 23px;
   color: rgba(0, 0, 0, 0);
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
           background-clip: text;
   text-shadow: none;
-  transition: all 0.5s;
+}
+
+.coeur-menu p {
+  color: #F6F6F6;
+}
+.coeur-menu p:hover {
+  font-size: 24px;
 }
 
 footer {
@@ -303,23 +311,22 @@ h1 {
 .card-menu .prix {
   flex-grow: 1;
   text-align: right;
+  margin-right: -15px;
 }
 .card-menu .check {
-  display: none;
+  opacity: 0;
   padding-right: 0px;
+  transition: padding-right 0.3s;
 }
 .card-menu:hover .prix {
-  padding-right: 3%;
+  padding-right: 30px;
 }
 .card-menu:hover .check {
-  display: inline;
+  opacity: 100;
   background-color: #99E2D0;
-  padding: 20px;
-  padding-right: 20px;
-  padding-top: 26px;
+  padding: 26px 20px 20px 20px;
   margin: -10px;
   border-radius: 0px 15px 15px 0px;
-  transition: all 2s;
 }
 
 .fa-circle-check {
