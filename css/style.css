@@ -31,7 +31,7 @@ button {
   border-radius: 30px;
   border-style: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-  transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 button:hover {
   opacity: 0.8;
@@ -99,7 +99,7 @@ header img {
 
 .liste-texte {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   background-color: #F6F6F6;
   padding: 10px;
   border-radius: 20px;
