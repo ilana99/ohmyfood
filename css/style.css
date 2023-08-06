@@ -379,8 +379,13 @@ h1 {
 }
 .card-menu .check {
   opacity: 0;
-  padding-right: 0px;
-  transition: padding-right 0.3s;
+  padding: 0px;
+  transition: padding-left 1s, padding-right 1s;
+}
+.card-menu .check .fa-circle-check {
+  color: white;
+  transform: rotate(0deg);
+  transition: transform 1s;
 }
 .card-menu:hover .prix {
   padding-right: 30px;
@@ -392,11 +397,18 @@ h1 {
   margin: -10px;
   border-radius: 0px 15px 15px 0px;
 }
-
-.fa-circle-check {
-  color: white;
+.card-menu:hover .check .fa-circle-check {
+  animation: rotation 1s;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* desktop */
 @media only screen and (min-width: 768px) {
   header .logo img {
